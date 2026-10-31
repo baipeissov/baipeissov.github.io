@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alemger Baipeissov: Research</title>
+<meta name="description" content="Does a speaking scorer trained on Speak & Improve transfer to IELTS-style learner speech? Draft paper by Alemger Baipeissov.">
+<style>
+  :root{--fg:#111;--muted:#555;--line:#ddd;--link:#0b4f9c;--bg:#fff;--code:#f6f6f6}
+  @media (prefers-color-scheme:dark){:root{--fg:#e8e8e8;--muted:#a0a0a0;--line:#333;--link:#7fb0ff;--bg:#111;--code:#1c1c1c}}
+  body{font-family:Georgia,"Times New Roman",serif;max-width:720px;margin:48px auto;padding:0 16px;line-height:1.6;color:var(--fg);background:var(--bg)}
+  h1{font-size:1.5em;margin:0 0 4px} h2{font-size:1.25em;margin:40px 0 6px;line-height:1.3}
+  h3{font-size:1em;margin:24px 0 6px}
+  .meta{color:var(--muted);font-size:.95em;margin:0}
+  a{color:var(--link)} hr{border:0;border-top:1px solid var(--line);margin:32px 0}
+  .links a{margin-right:16px}
+  pre{background:var(--code);padding:12px;overflow-x:auto;font-size:.85em;line-height:1.4}
+</style>
+</head>
+<body>
+<h1>Alemger Baipeissov</h1>
+<p class="meta">Nazarbayev Intellectual School, Almaty, Kazakhstan · <a href="mailto:loossj44@gmail.com">loossj44@gmail.com</a></p>
+
+<hr>
+
+<h2>Does a Speaking Scorer Trained on Speak &amp; Improve Transfer to IELTS-Style Learner Speech?</h2>
+<p class="meta">Draft, October 2026. Revision in progress.</p>
+<p class="links"><a href="SI_to_IELTS_transfer_draft.pdf">Paper (PDF)</a></p>
+
+<h3>Abstract</h3>
+<p>Automated speaking assessment systems are usually tested on data from the same exam they were trained on. We ask what happens when the test format changes. We fine-tune a 3B-parameter language model on ASR transcripts from the Speak &amp; Improve Corpus 2025 and apply it, with no adaptation, to 45 learner recordings from the Chen (2022) English Speech Corpus, which carry IELTS Speaking bands from 5.0 to 8.0. The ranking transfers well: Spearman's ρ is 0.80 (95% CI 0.62–0.91), compared with 0.71 for single Speak &amp; Improve part responses in domain. Absolute agreement does not transfer cleanly: predictions are compressed towards the middle of the scale, and the size of the offset depends on how the two scales are aligned. The test set is small and the IELTS labels have unconfirmed provenance, so we treat the results as an initial estimate.</p>
+
+<h3>Next</h3>
+<p>A revised version will add a BERT baseline, results per test part and an analysis of which aspects of proficiency transfer.</p>
+
+<h3>Cite</h3>
+<pre>@misc{baipeissov2026transfer,
+  title  = {Does a Speaking Scorer Trained on Speak \&amp; Improve
+            Transfer to IELTS-Style Learner Speech?},
+  author = {Baipeissov, Alemger},
+  year   = {2026},
+  note   = {Draft}
+}</pre>
+
+<p class="meta">No Speak &amp; Improve data, transcripts or trained models are released, in line with the corpus licence.</p>
+</body>
+</html>
